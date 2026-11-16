@@ -6,6 +6,12 @@ TARGETS = parent child1 child2
 .PHONY: all clean run help
 
 all: $(TARGETS)
+	@echo ""
+	@echo "Build complete!"
+	@echo "Run: make run"
+	@echo "Clean: make clean"
+	@echo "Help: make help"
+	@echo ""
 
 parent: parent.c
 	$(CC) $(CFLAGS) -o parent parent.c
